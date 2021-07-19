@@ -1,14 +1,16 @@
 import React from 'react'
 import { BrowserRouter as Router,Switch, Route } from 'react-router-dom';
-import Home from './pages/Home'
-import Login from './pages/Login'
-import WebGame from './pages/WebGame'
-import Portfolio from './pages/Portfolio'
+import TopBar from './components/topbar/TopBar'
+import Home from './pages/home/Home'
+import Login from './pages/login/Login'
+import WebGame from './pages/webgame/WebGame'
+import Portfolio from './pages/portfolio/Portfolio'
 
 const App = () => {
   return (
     <Router>
       <div>
+        <TopBar/>
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/login" component={Login}/>

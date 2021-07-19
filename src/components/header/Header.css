@@ -1,0 +1,29 @@
+.header{
+    background-image: url('../../assets/header.jpeg');
+    background-size: cover;
+    background-position: top;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:1264px){
+    .header{
+        background-position: center;
+    }
+}
+@media(max-width:600px){
+    .header{
+        background-position: left;
+    }
+}
+.headerTitle{
+    color: #fff;
+}
+.headerTitleSm{
+    margin-right: 10px;
+    font-size: 30px;
+}
+.headerTitleLg{
+    font-size: 15px;
+}
